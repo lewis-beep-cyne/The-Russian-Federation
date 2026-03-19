@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  background: whitesmoke;
+  color: rgb(75, 22, 124);
+  padding: 20px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: lightseagreen;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.image-container img {
+  display: block;
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 220px;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+ul, ol {
+  margin: 10px 0 15px 40px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+a:hover {
+  background: blue;
+}
+
+div {
+  margin-bottom: 30px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background: #0077cc;
+  color: white;
+  border-radius: 5px;
+}
+
+.slideshow {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+details {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+details[open] {
+  background: #e6f2ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: lightseagreen;
+  color: white;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #e6f2ff;
+  transition: background 0.3s ease;
+}
